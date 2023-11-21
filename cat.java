@@ -10,7 +10,9 @@ public cat(String breed, int age, boolean chonker, String personality) {
     catAge = age;
     //in human years
     isChonky = chonker;
+    //ARE THEY MORBIDLY OBESE????
     catTempermant = personality;
+    //mbti moment lol
 }
  public static void main(String[] args) {
     cat Shady = new cat("Russian Blue", 2, false, "very social");
