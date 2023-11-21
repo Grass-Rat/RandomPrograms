@@ -1,5 +1,7 @@
-# SNAKES GAME
-# Use ARROW KEYS to play, SPACE BAR for pausing/resuming and Esc Key for exiting
+# Basic lil snake game
+# Arrow Keys = motion controls 
+# SPACE BAR for pausing/resuming
+# Esc Key = exit
 
 import curses
 from curses import KEY_RIGHT, KEY_LEFT, KEY_UP, KEY_DOWN
@@ -17,16 +19,16 @@ win.nodelay(1)
 key = KEY_RIGHT                                                    # Initializing values
 score = 0
 
-snake = [[4,10], [4,9], [4,8]]                                     # Initial snake co-ordinates
-food = [10,20]                                                     # First food co-ordinates
+snake = [[4,10], [4,9], [4,8]]                                     # Initial snake coords
+food = [10,20]                                                     # 1st food coords
 
-win.addch(food[0], food[1], '*')                                   # Prints the food
+win.addch(food[0], food[1], '*')                                   # Printsfood
 
-while key != 27:                                                   # While Esc key is not pressed
+while key != 27:                                                   # While Esc key is NOT pressed
     win.border(0)
     win.addstr(0, 2, 'Score : ' + str(score) + ' ')                # Printing 'Score' and
     win.addstr(0, 27, ' SNAKE ')                                   # 'SNAKE' strings
-    win.timeout(150 - (len(snake)/5 + len(snake)/10)%120)          # Increases the speed of Snake as its length increases
+    win.timeout(150 - (len(snake)/5 + len(snake)/10)%120)          # Increases Snake speed as size increases
     
     prevKey = key                                                  # Previous key pressed
     event = win.getch()
