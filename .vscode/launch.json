@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SavingsAccount",
+            "request": "launch",
+            "mainClass": "SavingsAccount",
+            "projectName": "BeginnerProgram_3c71183f"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
