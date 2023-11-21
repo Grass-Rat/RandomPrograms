@@ -21,7 +21,7 @@ public cat(String breed, int age, boolean chonker, String personality) {
     // Winnie is a shy, chonky, 1 yeaer old tortoiseshell cat
     boolean isShadyOlder = Shady.age > Winnie.age;
     //Asks if it is true that Shady is older, which it is
-    string winniePersonality = Winnie.personality;
+    String winniePersonality = Winnie.personality;
     //Has the value of Winnie's personality, which is shy
     System.out.println("It is " + isShadyOlder + " that Shady is older than Winnie.");
     //gives the value of boolean isShadyOlder
