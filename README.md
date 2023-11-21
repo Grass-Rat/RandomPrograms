@@ -1,2 +1,2 @@
 # BeginnerProgram
-Random basic things I program in the crappy language that is Java
+Random basic things I program while I'm new to certain languages
