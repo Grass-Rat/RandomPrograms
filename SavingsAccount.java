@@ -1,4 +1,4 @@
-public class SavingsAccount {
+public class SavingsAccount{
 
 int balance;
 
