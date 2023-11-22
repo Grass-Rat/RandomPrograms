@@ -1,4 +1,4 @@
-# Basic lil snake game
+# Basic snake game using python
 # Arrow Keys = motion controls 
 # SPACE BAR for pausing/resuming
 # Esc Key = exit
@@ -42,7 +42,7 @@ while key != 27:                                                   # While Esc k
         key = prevKey
         continue
 
-    if key not in [KEY_LEFT, KEY_RIGHT, KEY_UP, KEY_DOWN, 27]:     # If an invalid key is pressed
+    if key not in [KEY_LEFT, KEY_RIGHT, KEY_UP, KEY_DOWN, 27]:     # If invalid key is pressed
         key = prevKey
 
     # Calculates the new coordinates of the head of the snake. NOTE: len(snake) increases.
