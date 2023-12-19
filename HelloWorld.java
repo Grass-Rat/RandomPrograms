@@ -1,7 +1,6 @@
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello World");
-    System.out.println("Hi World");
-    System.out.println("Wassup World");
+    System.out.print("Hello World! ");
+    System.out.println("This will print on the same line.");
   }
 }
